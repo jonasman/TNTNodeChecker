@@ -1,5 +1,5 @@
 # TNTNodeChecker
-Checks your TNT node for audits issues
+Checks your TNT nodes for audit issues
 
 # Setup
 ```cd NodeChecker```
