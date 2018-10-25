@@ -173,6 +173,8 @@ if let jsonData = try? Data(contentsOf: fileURL, options: .mappedIfSafe),
             let jsonData = try? jsonDecoder.decode(TopLevel.self, from: data) {
             parseNodes(jsonData: jsonData)
             //print(jsonData)
+        } else {
+            print("[FAIL] \(node.tntAddress.lowercased()) / \(node.ipAddress) is down.")
         }
     }
 }
