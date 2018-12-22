@@ -150,7 +150,7 @@ func parseNodes(jsonData: TopLevel) {
     }
 
     if (jsonData.nodeData.node.consecutivePasses > 0) {
-        print("[OK] \(nodeAddress) / \(nodeURI) with \(jsonData.nodeData.node.consecutivePasses) consecutive passes.")
+        print("[OK] \(jsonData.nodeData.audits[0].nodeVersion) \(nodeAddress) / \(nodeURI) with \(jsonData.nodeData.node.consecutivePasses) consecutive passes.")
     }
     if (jsonData.nodeData.node.consecutiveFails > 0) {
         print("[FAIL] \(nodeAddress) / \(nodeURI) with \(jsonData.nodeData.node.consecutiveFails) consecutive fails.")
